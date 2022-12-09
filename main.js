@@ -5,13 +5,11 @@ para.textContent = "";
 
 
 function getComputerChoice() {
-
     let choices = ["rock", "paper", "scissors"];
     return choices[Math.floor(Math.random() * choices.length)];
 }
 
 function playRound(playerSelection, computerSelection) {
-
     if (playerSelection === computerSelection) return "draw";
     if (playerSelection === "rock") return computerSelection === "scissors"? "win" : "lose" ;
     if (playerSelection === "scissors") return computerSelection === "paper"? "win" : "lose" ;
@@ -19,7 +17,6 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function main() {
-
     let playerCount = 0;
     let computerCount = 0;
 
@@ -51,5 +48,11 @@ function main() {
 }
 
 main();
+
+let input;
+
+while (input <= 100) {
+    input = +prompt("number greater than 100: ")
+}
 
 
